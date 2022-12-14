@@ -9,7 +9,10 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${file}"
+            "program": "${file}",
+            "env": {
+                "GOPATH12e": "/Users/f.wolffcelonis.com/code/adventofcode/2022"
+            }
         }
     ]
 }

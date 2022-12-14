@@ -9,7 +9,7 @@ import (
 	"strconv"
 )
 
-func main() {
+func main1() {
 	var FILENAME string = "input1"
 
 	file, err := os.Open(FILENAME)
