@@ -21,3 +21,13 @@ func ReadFileLineByLine(filename string, fn consumer) {
 		fn(scanner.Text())
 	}
 }
+
+func Sum(capacities ...int) int {
+	result := 0
+
+	for _, number := range capacities {
+		result += number
+	}
+
+	return result
+}
