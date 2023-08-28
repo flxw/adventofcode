@@ -22,6 +22,15 @@ func ReadFileLineByLine(filename string, fn consumer) {
 	}
 }
 
+func ReadWholeFile(filename string) string {
+	b, err := os.ReadFile(filename)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return string(b)
+}
+
 func Sum(capacities ...int) int {
 	result := 0
 
